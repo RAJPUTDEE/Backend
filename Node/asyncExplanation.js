@@ -67,7 +67,7 @@
 
 /*
   PROMISE - The Foundation of Async
-  
+
   A Promise is an object that represents a value which may or may not be available yet,
   but will be resolved (or rejected) at some point in the future.
   
@@ -114,10 +114,8 @@
   .then() executes when a Promise is RESOLVED (succeeds).
   It receives the resolved value as a parameter.
   
-  Syntax: promise.then((value) => { // do something with value
-  })
-  
-  Example:
+  Syntax: promise.then((value) => { // do something with value })
+    Example:
 
   fetch('api.com/user')
     .then((response) => console.log("Got response:", response))
@@ -131,8 +129,7 @@
   .catch() executes when a Promise is REJECTED (fails).
   It receives the error as a parameter.
   
-  Syntax: promise.catch((error) => { // handle error
-  })
+  Syntax: promise.catch((error) => { // handle error })
   
   Example:
   
