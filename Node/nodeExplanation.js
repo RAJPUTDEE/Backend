@@ -8,6 +8,25 @@
   - It provides built-in modules for file I/O, networking, streams, and more.
   - It uses an event-driven, non-blocking I/O model (event loop) for high concurrency.
 
+  JAVASCRIPT ENGINES IN DIFFERENT BROWSERS AND RUNTIMES
+  ---------------------------------------------------
+  Different browsers use different JavaScript engines, and some of these engines
+  are used in server-side JavaScript runtimes for Node.js-like applications:
+
+  - Chrome/Edge (Chromium-based): V8 engine
+    → Used in Node.js (primary runtime)
+    → Also used in Deno (alternative runtime)
+
+  - Safari: JavaScriptCore engine
+    → Used in Bun (fast alternative runtime with built-in bundler)
+
+  - Firefox: SpiderMonkey engine
+    → Primarily browser-only, though there are experimental server-side projects
+    → Not commonly used for production Node.js alternatives
+
+  While Node.js specifically uses V8, other runtimes leverage different browser
+  engines to provide alternative approaches to server-side JavaScript execution.
+
   WHY NODE.JS EXISTS
   ------------------
   - JavaScript was originally browser-only. Node.js enables JavaScript on the server.
