@@ -8,7 +8,7 @@ const path = require('path');
 const filePath = path.join("..", "SumUsingModule", "sumApp.js");
 
 // Accessing the file using fs module to read the contents of the file
-fs.readFile(filePath, 'ascii', (err, data) => {
+fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
         console.error('Error reading file:', err);
     } else {
