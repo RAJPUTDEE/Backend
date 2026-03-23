@@ -1,3 +1,0 @@
-Just to test parent dir name changes from local to remote or not.
-
-This time changed remote repo name and kept local repo name unchanged.
