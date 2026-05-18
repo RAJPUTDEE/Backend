@@ -1,5 +1,7 @@
 // Using fs along with path to create a file path
-// The fs module provides an API for interacting with the file system in a manner closely modeled around standard POSIX functions. It can be used to read, write, and manipulate files and directories. The path module can be used in conjunction with the fs module to create file paths that are compatible with the operating system.
+// The fs module provides an API for interacting with the file system in a manner closely modeled around standard POSIX functions.
+// It can be used to read, write, and manipulate files and directories.
+// The path module can be used in conjunction with the fs module to create file paths that are compatible with the operating system.
 
 const fs = require('fs');
 const path = require('path');
