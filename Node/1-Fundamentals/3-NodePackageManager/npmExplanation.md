@@ -5,6 +5,8 @@
 NPM (Node Package Manager) is the default package manager for Node.js.
 It helps developers install, manage, and share JavaScript packages and dependencies.
 
+Official website to know about packages : https://www.npmjs.com/
+
 WHAT IS NPM?
 -----------
 NPM is a command-line tool that comes bundled with Node.js. It serves as:
