@@ -132,9 +132,9 @@ Semantic Versioning is a versioning scheme that conveys meaning about changes.
 Format: MAJOR.MINOR.PATCH (e.g., 2.1.3)
 
 VERSION COMPONENTS:
-- MAJOR: Breaking changes (incompatible API changes)
-- MINOR: New features (backward compatible)
-- PATCH: Bug fixes (backward compatible)
+- MAJOR: Breaking changes (incompatible/non-backward compatible API changes)
+- MINOR: New features/additive changes (backward compatible)
+- PATCH: Bug fixes/hot fixes (backward compatible)
 
 EXAMPLES:
 - 1.0.0: Initial stable release
@@ -144,19 +144,19 @@ EXAMPLES:
 - 1.0.0-alpha.1: Pre-release version
 - 1.0.0-rc.1: Release candidate
 
-VERSION RANGES AND COMPARATORS:
+VERSION RANGES AND MODIFIERS:
 NPM supports various ways to specify acceptable version ranges:
 */
 
 // EXACT VERSION
 "1.2.3"        // Exactly version 1.2.3
 
-// CARET (^) - DEFAULT FOR MOST PACKAGES
+// CARET (^) - ONLY ALLOWS MINOR UPDATES; DEFAULT FOR MOST PACKAGES
 "^1.2.3"       // Compatible with 1.x.x (allows minor and patch updates)
 "^0.2.3"       // Compatible with 0.2.x (for pre-1.0, stricter)
 "^0.0.3"       // Compatible with 0.0.3 (exact for pre-1.0 pre-minor)
 
-// TILDE (~)
+// TILDE (~) - UPDATE LATEST PATCH VERSION
 "~1.2.3"       // Compatible with 1.2.x (allows patch updates only)
 "~1.2"         // Same as ~1.2.0
 "~1"           // Same as ~1.0.0
