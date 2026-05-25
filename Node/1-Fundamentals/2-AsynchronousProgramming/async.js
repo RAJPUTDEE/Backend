@@ -20,6 +20,7 @@ const data = fs.readFile(filePath, 'utf-8', (err,data) => {
 // The readFile() method does not block the execution of the program, it allows other operations to be performed while the file is being read.
 // But even if reading operation completes before the for loop,
 // the callback function will be executed only after for loop is completed because of the event loop in Node.js.
+// Hence in async all handlers are executed after compute operations.
 
 console.log(`${Date.now()} In Ansync this will be executed before reading operation`);
 
