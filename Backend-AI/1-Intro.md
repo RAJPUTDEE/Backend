@@ -1,33 +1,85 @@
-### History of AI
-The term AI exists from 1950. Between 1950-1990 there was a term called Heuristics.
-- Heuristics(1950-1990):
-    It refer to a set of criteria or rules of thumb that provide an estimate of the most viable solution. By balancing exploration (searching new possibilities) and exploitation (refining known solutions), heuristic algorithms efficiently solve complex problems that would otherwise be computationally expensive.
-    The advantage of heuristic search techniques in AI is their ability to efficiently navigate large search spaces. By prioritizing the most promising paths, heuristics significantly reduce the number of possibilities that need to be explored. This not only accelerates the search process but also enables AI systems to solve complex problems that would be impractical for exact algorithms.
-- Classical ML(1990-2010):
-    1. These algorithms are statistical and probabilistic techniques that learn patterns from structured data without relying on deep neural networks.
-    2. They remain the primary choice for tabular, structured datasets where computational resources or training data are limited.
-    3. These algorithms predict continuous numerical values based on labeled historical data.
-    ## Linear Regression: Finds the best-fitting straight line (hyperplane) to model the relationship between independent features and a continuous target/dependent/class.
-- Linear Regression uses a random value to come to the best fitting line. For this analysis it makes use of an equation
+# Introduction to Foundational AI
 
-## y = wx + b
- where w is the weight/parameters and b is the bias. and uses the strategy called Ordinary Least Square
+---
 
-# Problem with linear regression:
-- If we have multiple features for which we do not have a straight line and instead we get curves in that case we do not get the best results.
-- This gave birth to Neural Networks.
+## History of AI
 
-## Neural Networks:
-- It also uses an enhanced version of linear regression called logistic linear regression.
-- Formula for it is similar to Linear Regression but it uses a sigmoid
-    y = sigma(wx + b)
-- It has multiple nodes, each node processes linear regressions based on Bias(Nodes) and Weights(inter-connection between multiple nodes).
-- This concept of NN is nothing but the modern Deep Learning(DL) algorithms.
-- There are multiple algorithms other than logistic regression used by multiple DL models.
-- In neural networks to achieve the best fit line it uses two strategies
-1. Gradient Descent: Adjusting errors to achieve the ideal line(best fit line).
-2. Back Propagation: Retraining data with weight and bias adjustments and reaching correct approx result.
+The term "Artificial Intelligence" has existed since 1950. Its evolution can be broadly divided into three phases:
 
-- Tranformer Architecture(2017):
-- The Transformer architecture, introduced in the paper "Attention is All You Need" by Vaswani et al. in 2017, revolutionized the field of AI, particularly in natural language processing (NLP).
-- These transformers uses encoders and decoders.
+---
+
+### 1. Heuristics (1950–1990)
+
+Heuristics refer to a set of criteria or rules of thumb that provide an estimate of the most viable solution. By balancing:
+
+- **Exploration** — searching new possibilities
+- **Exploitation** — refining known solutions
+
+Heuristic algorithms efficiently solve complex problems that would otherwise be computationally expensive. Their key advantage is the ability to navigate large search spaces by prioritizing the most promising paths, significantly reducing the number of possibilities to explore.
+
+---
+
+### 2. Classical Machine Learning (1990–2010)
+
+Classical ML algorithms are statistical and probabilistic techniques that learn patterns from structured data without relying on deep neural networks. Key characteristics:
+
+- Primary choice for tabular, structured datasets
+- Suitable when computational resources or training data are limited
+- Can predict continuous numerical values from labeled historical data
+
+#### Linear Regression
+
+Finds the best-fitting straight line (or hyperplane) to model the relationship between independent features and a continuous target variable.
+
+It uses the equation:
+
+```
+y = wx + b
+```
+
+Where:
+- `w` = weight (parameters)
+- `b` = bias
+
+The model starts with a random value and iteratively finds the best-fitting line using a strategy called **Ordinary Least Squares (OLS)**.
+
+> **Limitation:** When multiple features produce curves instead of a straight line, Linear Regression does not yield the best results. This limitation led to the development of Neural Networks.
+
+---
+
+### 3. Neural Networks & Deep Learning (2010s onwards)
+
+Neural Networks (NN) are inspired by the human brain and consist of multiple nodes (neurons) organized in layers. Each node processes inputs using:
+
+- **Bias** — associated with each node
+- **Weights** — associated with inter-connections between nodes
+
+Neural Networks use **logistic regression** (not linear regression) for classification tasks. It applies a sigmoid activation function:
+
+```
+y = σ(wx + b)
+```
+
+Where `σ` (sigma) is the sigmoid function that squashes the output between 0 and 1.
+
+This concept of Neural Networks forms the foundation of modern **Deep Learning (DL)** algorithms, which use many other techniques beyond logistic regression.
+
+#### Training Strategies
+
+To achieve the best-fit model, Neural Networks rely on two key strategies:
+
+1. **Gradient Descent** — Iteratively adjusts weights and biases in the direction that minimizes the error (loss), moving closer to the optimal solution.
+2. **Backpropagation** — Propagates the error signal backward through the network, computing gradients layer by layer to update weights and biases accordingly.
+
+---
+
+### 4. Transformer Architecture (2017–present)
+
+The Transformer architecture was introduced in the paper **"Attention is All You Need"** by Vaswani et al. in 2017, revolutionizing AI — particularly in Natural Language Processing (NLP).
+
+Key components:
+
+- **Encoder** — Processes the input data and captures contextual relationships between elements
+- **Decoder** — Generates the output based on the encoded information
+
+Transformers replaced the need for recurrence (like RNNs) entirely, enabling far more parallelization and better handling of long-range dependencies in data.
