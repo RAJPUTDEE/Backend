@@ -1,1 +1,3 @@
-Demo for read sync and write async
+This file contents will be copied to the output file.
+
+If any exisiting context contains in the output file then it will be deleted.
