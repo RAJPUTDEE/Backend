@@ -19,4 +19,5 @@
 - It uses HTTP methods (GET, POST, PUT, PATCH, DELETE) to perform operations on resources.
 - It is stateless, meaning each request from client to server must contain all the information needed to understand and process the request. The server does not store any client context between requests.
 - It typically uses JSON for data exchange, but can also use XML/HTML/PLAIN TEXT or other formats.
+- It revolves around nouns and verbs, using plural nouns is the best practice to write APIs.
 
