@@ -70,7 +70,7 @@ app.get('/api/v1/courses', (req,res) => {
 app.get('/api/v1/courses/:courseId', (req,res) => { // :courseId is a route parameter. It is a placeholder for the actual value which will be passed in the url. For example, if the url is /api/v1/courses/0, then req.params.courseId will be 0.
     // :courseId is also called as path parameter. It is used to identify a specific resource. In this case, it is used to identify a specific course. These path parameter are mandatory and should be passed in the url.
     console.log(req.params); // req.params is an object which contains the route parameters. In this case, it will be { id: '0' } for /api/v1/courses/0
-    console.log(req.url);
+    console.log("request received on", req.url);
 
     const course = courses.find(c => c.id === parseInt(req.params.courseId));
 
