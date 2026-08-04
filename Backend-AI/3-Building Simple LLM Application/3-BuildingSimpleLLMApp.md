@@ -19,12 +19,6 @@ This session moved from theory into hands-on LLM application building. The focus
 
 Colab is a cloud-hosted Jupyter Notebook environment by Google. Runs entirely in the browser — no local Python setup, no dependency conflicts. Notebook files use the `.ipynb` extension, which also works locally in VS Code via the Jupyter extension.
 
-Used in this course because the instructor shares a notebook link with viewer-only access. To get your own editable copy:
-
-1. Open the shared notebook link
-2. Go to **File → Save a copy in Drive**
-3. Open the copied notebook from your Drive and edit that copy
-
 **Free tier limitations:**
 - Runtime disconnects when the session ends — all in-memory variables are lost
 - Re-run all cells every time you reconnect
@@ -58,8 +52,6 @@ With creators, you access their own models directly. With service providers, you
 | Open-source | Weights and/or code are publicly available (e.g., Hugging Face, GitHub). Can be self-hosted, fine-tuned, and deployed on your own infrastructure. |
 
 Tools like **Ollama** let you run open-source models locally — useful when you want to avoid API costs or need offline access.
-
-#### BLOOM — A Historical Milestone
 
 **BLOOM** (2022) was one of the first major open-source LLMs:
 - 176 billion parameters
